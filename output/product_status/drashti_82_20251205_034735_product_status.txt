@@ -1,0 +1,82 @@
+Matched
+Product Name | Matched With | AI Reason
+Git | git/git | Short exact match | Forced match via fast-path: near-exact product name (similarity=1.00)
+Google Play Games beta | google llc/play services sdk | High similarity score for the product name 'Google Play Games beta' with the candidate match from the database.
+Intel(R) Arc Software & Drivers | intel/intel(r) graphics drivers | 
+Microsoft 365 - en-us | microsoft/microsoft dynamics 365 business central 2020 release wave 1 - update 16.14 | Similarity in product name and en-us language hint
+Microsoft OneNote - en-us | microsoft/microsoft onenote | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+WinRAR 6.11 (64-bit) | rarlab/winrar | Exact match in the software name, except for the minor difference of 'Win' vs 'win'
+Microsoft .NET Host - 8.0.3 (x64) | microsoft/.net 8.0 | String similarity with 'Microsoft .NET Host' and the presence of '.NET' in the candidate match.
+Intel(R) Management Engine Components | intel corporation/intel(r) converged security and management engine (csme) and intel(r) server platform services firmware | 
+Python 3.11.9 Utility Scripts (64-bit) | apache software foundation/apache portable runtime utility (apr-util) | AI backend (Ollama) unavailable or invalid JSON, using highest string match
+Documentation Manager | dassault systèmes/documentation server | 
+Intel(R) Chipset Device Software | intel/intel(r) chipset device software inf utility | Exact string match in the original software name. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Office 16 Click-to-Run Extensibility Component | microsoft corporation/microsoft office | AI backend (Ollama) unavailable or invalid JSON, using highest string match
+Python 3.11.9 Standard Library (64-bit) | python/python | Exact match with the original software name | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+NVIDIA Graphics Driver 576.93 | nvidia corporation/gpu graphics driver | 
+NVIDIA PhysX System Software 9.23.1019 | nvidia/nvidia vgpu software | AI backend (Ollama) unavailable or invalid JSON, using highest string match
+NVIDIA Install Application | nvidia/nvidia geforce now application | High score and presence of 'NVIDIA' in the name suggest a strong match.
+NVIDIA Platform Controllers and Framework | nvidia/platform controllers and framework | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Intel(R) Icls | intel/intel(r) graphics driver | 
+Dynamic Application Loader Host Interface Service | apache software foundation/apache linkis metadata query service jdbc | 
+Intel(R) Management Engine Driver | intel corporation/intel(r) converged security and management engine (csme) and intel(r) server platform services firmware | 
+Microsoft Windows Desktop Runtime - 8.0.3 (x64) | microsoft/windows | String similarity score of 100.00% between 'Microsoft Windows Desktop Runtime - 8.0.3 (x64)' and 'microsoft/windows' | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft .NET Runtime - 8.0.3 (x64) | microsoft/.net 8.0 | 
+Microsoft .NET Host FX Resolver - 8.0.3 (x64) | microsoft/.net 8.0 | 
+Intel(R) Management Engine Components | intel corporation/intel(r) converged security and management engine (csme) and intel(r) server platform services firmware | 
+AnyDesk | anydesk/anydesk | Exact string match | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Brave | brave/brave browser | Exact matching with candidate 4. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Dolby Digital Live Pack version 5.02.01 | dolby/digital live pack | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Dropbox | dropbox/dropbox desktop | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Google Chrome | google/chrome | Perfect token set match | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft Edge | microsoft/microsoft edge | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft Edge WebView2 Runtime | microsoft/microsoft edge | Exact name match | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Dropbox Update Helper | dropbox/merou | 
+Acer Jumpstart | acer/aspire a115-21 | AI backend (Ollama) unavailable or invalid JSON, using highest string match
+Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005 | microsoft corporation/uniscribe | 
+WebAdvisor by McAfee | mcafee/mcafee webadvisor | 
+Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.34.31938 | microsoft/visual c++ redistributable installer | 
+Control Center 3.0 Package v6.104 | ibm/control center | Forced match via fast-path: near-exact product name (similarity=1.00)
+ExpressVPN | express/ExpressVPN | Best match based on exact name similarity. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Realtek Ethernet Controller Driver | realtek/hda driver | String similarity score indicates a strong match between the installed software name and realtek/hda driver.
+Adobe Refresh Manager | adobe/adobe download manager | 
+Adobe Acrobat Reader | adobe/acrobat reader | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.21005 | microsoft/the installer of visual c++ redistributable | 
+Intel(R) Chipset Device Software | intel/intel(r) chipset device software inf utility | Exact string match in the original software name. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Realtek Audio Driver | realtek/hda driver | 
+Microsoft Windows Desktop Runtime - 8.0.3 (x64) | microsoft/windows | String similarity score of 100.00% between 'Microsoft Windows Desktop Runtime - 8.0.3 (x64)' and 'microsoft/windows' | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+MongoDB Compass | mongodb inc/mongodb compass | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft OneDrive | microsoft/onedrive for windows | 
+Zoom Workplace | zoom communications inc./zoom workplace apps and rooms clients | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft Visual Studio Code (User) | microsoft/visual studio code | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+
+Unmatched
+Product Name
+Tesseract-OCR - open source OCR engine
+VLC media player
+Intel(R) Serial IO
+Python 3.11.9 pip Bootstrap (64-bit)
+Python 3.11.9 Documentation (64-bit)
+Python 3.11.9 Tcl/Tk Support (64-bit)
+Office 16 Click-to-Run Licensing Component
+Intel(R) ME WMI Provider
+Intel(R) Serial IO
+Python 3.11.9 Test Suite (64-bit)
+Python 3.11.9 Core Interpreter (64-bit)
+Python 3.11.9 Executables (64-bit)
+Python 3.11.9 Add to Path (64-bit)
+Python 3.11.9 Development Libraries (64-bit)
+MongoDB 8.2.1 2008R2Plus SSL (64 bit)
+Creative App version 1.18.01.00
+DTS Connect Pack version 3.02.01
+Intel(R) Wireless Bluetooth(R)
+Microsoft Visual C++ 2022 X86 Additional Runtime - 14.34.31938
+Acer Configuration Manager
+Intel? Software Installer
+Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.34.31938
+AcerWarrantyRegistration
+BayHubTech SD Host Driver
+Python Launcher
+Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.21005
+Doselect Secure Browser 1.0.14
+Python 3.11.9 (64-bit)

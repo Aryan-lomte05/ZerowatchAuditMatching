@@ -1,0 +1,732 @@
+[
+  {
+    "name": "Windows Driver Package - Texas Instruments, Inc. (WinUSB)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "StellarisICDIDeviceClass  (09/22/2019 2.2.1)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "7-Zip 25.01 (x64)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Windows Driver Package - Texas Instruments Inc. (WinUSB)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "StellarisDFUDeviceClass  (09/22/2019 1.4.1)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Windows Driver Package - Texas Instruments, Inc. (usbser)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Ports  (09/22/2019 2.2.1)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Anaconda3 2024.10-1 (Python 3.12.7 64-bit)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Armoury Crate Service",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Autodesk Identity Manager",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "CCS Theia 1.5.1.00003",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Git",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "McAfee",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft 365 - en-us",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft OneNote - en-us",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "USBPcap 1.5.4.0",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS Aac_NBDT HAL",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Eclipse Temurin JDK with Hotspot 21.0.5+11 (x64)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS Keyboard HAL",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS Hotplug Controller",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft .NET Host - 6.0.16 (x64)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ROG Live Service",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.42.34438",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "PyMOL (64 bit)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft .NET Host FX Resolver - 6.0.8 (x64)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS Ambient HAL",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "LTspice",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Python 3.12.4 Core Interpreter (64-bit)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Python 3.12.4 Standard Library (64-bit)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Xbox 360 Controller Emulator",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Xbox 360 Controller Emulator",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft .NET Host - 8.0.13 (x64)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Python 3.12.4 Tcl/Tk Support (64-bit)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Python 3.12.4 Executables (64-bit)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Python 3.12.4 Development Libraries (64-bit)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft .NET Runtime - 6.0.8 (x64)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Office 16 Click-to-Run Licensing Component",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Office 16 Click-to-Run Extensibility Component",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS Aac_GmAcc HAL",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "AI Noise Cancelation Audio Software SDK",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Autodesk Access",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS AURA Headset Component",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Teams Meeting Add-in for Microsoft Office",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Python 3.12.4 Test Suite (64-bit)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Python 3.12.4 Documentation (64-bit)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Autodesk Save to Web and Mobile",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS AURA Display Component",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA Graphics Driver 566.07",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA App 11.0.5.266",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA MessageBus 3 for NvApp",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA Backend",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NvCpl",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA Optimus Update 39.5.0.0",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA PhysX System Software 9.21.0713",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA FrameView SDK 1.5.11504.36206172",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA Install Application",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA Container",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA AIUser Container",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA LocalSystem Container",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA Session Container",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA User Container",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA NvDLISR",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA Platform Controllers and Framework",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA Watchdog Plugin for NvContainer",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA Telemetry Client",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA ShadowPlay 11.0.5.0",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA Update Core",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "NVIDIA Virtual Audio 4.65.0.3",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft .NET Host FX Resolver - 6.0.16 (x64)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS Mouse HAL",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft .NET Host FX Resolver - 8.0.13 (x64)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS Mouse Extern HAL",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS MB Peripheral Products",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "AURA lighting effect add-on x64",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Update Health Tools",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft .NET Runtime - 6.0.16 (x64)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft .NET Runtime - 8.0.13 (x64)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030 Not Matched",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS Aura SDK",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Autodesk Genuine Service",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Cursor",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "AutoCAD Open in Desktop",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Visual C++ 2022 X64 Additional Runtime - 14.42.34438",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Node.js",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Windows Desktop Runtime - 6.0.8 (x64)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Eclipse Temurin JDK with Hotspot 17.0.13+11 (x64)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Python 3.12.4 Add to Path (64-bit)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Python 3.12.4 pip Bootstrap (64-bit)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft ASP.NET Core 6.0.8 Shared Framework (x64)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "GCC - Open Source Compiler for MSP430 Microcontrollers",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Google Chrome",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Edge",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Edge WebView2 Runtime",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "MSP430 Flash Emulation Driver Installer",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Npcap",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "PyCharm Community Edition 2024.1.4",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Wireshark 4.4.9 x64",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Intel(R) Wireless Bluetooth(R)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "GameSDK Service",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS AURA Display Component",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft ASP.NET Core 6.0.8 - Shared Framework (x64)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005 Not Matched",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "AURA lighting effect add-on",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Bing Service",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft .NET Runtime - 6.0.16 (x64)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS Aac_NBDT HAL",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS Framework Service",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030 Not Matched",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "WebAdvisor by McAfee",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Python Launcher",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS AURA Headset Component",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS Mouse Extern HAL",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "AURA Service",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.42.34438",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS Ambient HAL",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS Mouse HAL",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS MB Peripheral Products",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS Keyboard HAL",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "GameSDK Service",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "RefreshRateService",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS Smart Display Control",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft .NET Runtime - 8.0.13 (x64)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Autodesk App Manager",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS Aac_GmAcc HAL",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Visual C++ 2022 X86 Additional Runtime - 14.42.34438",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "ASUS Update Helper",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "AI Noise Cancelation Audio Software",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61030",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.42.34438",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.42.34438",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61030 Not Matched",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Windows Desktop Runtime - 6.0.8 (x64)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030 Not Matched",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "AURA Service",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.30501 Not Matched",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.21005",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Unstop SmartHire 2.2.0",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Notion 3.15.1",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Cluely",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "CodeBlocks",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft OneDrive",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Zoom Workplace",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Microsoft Visual Studio Code (User)",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "MSYS2",
+    "version": "",
+    "publisher": ""
+  },
+  {
+    "name": "Python 3.12.4 (64-bit)",
+    "version": "",
+    "publisher": ""
+  }
+]

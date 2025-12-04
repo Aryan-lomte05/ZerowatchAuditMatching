@@ -1,0 +1,243 @@
+Matched
+Product Name | Matched With | AI Reason
+Armoury Crate Service | asus/armoury crate service | Exact string match | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Avast Free Antivirus | avast/free antivirus | Perfect string match | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Git | git/git | Short exact match | Forced match via fast-path: near-exact product name (similarity=1.00)
+Microsoft Office Home 2024 - en-us | microsoft/microsoft office ltsc 2024 | 
+Intel(R) Graphics Software & Drivers | intel/intel(r) graphics drivers | AI backend (Ollama) unavailable or invalid JSON, using highest string match
+McAfee | mcafee/endpoint security for linux threat prevention (ensltp) | 
+Microsoft OneDrive | microsoft/onedrive for windows | 
+Microsoft OneNote - en-us | microsoft/microsoft onenote | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft .NET Host - 8.0.14 (x64) | microsoft/.net 8.0 | Best match based on token_set similarity.
+Microsoft GameInput | microsoft/microsoft bing | 
+Intel(R) Computing Improvement Program | intel corporation/intel(r) computing improvement program | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+ASUS Hotplug Controller | asus/armoury crate | The software name 'ASUS Hotplug Controller' closely matches the candidate 'asus/armoury crate'.
+Microsoft .NET Host - 6.0.16 (x64) | microsoft/.net 6.0 | AI backend (Ollama) unavailable or invalid JSON, using highest string match
+Microsoft Visual C++ 2010 x64 Redistributable - 10.0.40219 | microsoft/visual c++ redistributable installer | 
+Python 3.13.4 Standard Library (64-bit) | python/python | Python 3.13.4 Standard Library matches the name of a Python version and standard library, which is the most specific match among the candidates. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft .NET Host FX Resolver - 9.0.5 (x64) | microsoft/.net | Token set similarity score of 96.25 indicates a strong match. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Python 3.11.9 Utility Scripts (64-bit) | apache software foundation/apache portable runtime utility (apr-util) | AI backend (Ollama) unavailable or invalid JSON, using highest string match
+ROG Live Service | asus/armoury crate & aura creator installer (rog live service) | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft .NET Runtime - 9.0.5 (x64) | microsoft/.net | Highly confident due to exact matching of '.NET' substring in the installed software name | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.4148 | microsoft/the installer of visual c++ redistributable | 
+Microsoft Windows Desktop Runtime - 9.0.5 (x64) | microsoft/windows | String similarity with 'Microsoft Windows Desktop Runtime' matches highest with this candidate. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Logitech G HUB | logitech/logitech harmony hub | 
+ASUS Keyboard HAL | asus/armoury crate | The presence of 'ASUS' and 'Keyboard' in the original software name makes this a strong match.
+Node.js | node.js/node.js | Exact string match | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft .NET Runtime - 8.0.14 (x64) | microsoft/.net 8.0 | 
+Microsoft Visual Studio Installer | microsoft/the installer of visual studio code | 
+Office 16 Click-to-Run Extensibility Component | microsoft corporation/microsoft office | AI backend (Ollama) unavailable or invalid JSON, using highest string match
+Python 3.11.9 Standard Library (64-bit) | python/python | Exact match with the original software name | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft .NET Host - 9.0.5 (x64) | microsoft/.net | High score from token_set method and 'Host' part matches .NET framework | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+GlideX Service Installer | amd/aim-t manageability service | 
+ASUS AURA Headset Component | asus/armoury crate & aura creator installer (rog live service) | AI backend (Ollama) unavailable or invalid JSON, using highest string match
+Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.21005 | microsoft corporation/uniscribe | 
+Microsoft Teams Meeting Add-in for Microsoft Office | microsoft/microsoft teams | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+ASUS AURA Display Component | asus/armoury crate & aura creator installer (rog live service) | String similarity score of 94.05% indicates a strong match.
+Microsoft .NET Host FX Resolver - 8.0.14 (x64) | microsoft/.net 8.0 | 
+NVIDIA Graphics Driver 566.07 | nvidia corporation/gpu graphics driver | 
+NVIDIA App 11.0.4.139 | nvidia/nvidia app | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+NvCpl | nvidia/NvCpl | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+NVIDIA PhysX System Software 9.23.1019 | nvidia/nvidia vgpu software | AI backend (Ollama) unavailable or invalid JSON, using highest string match
+NVIDIA HD Audio Driver 1.4.2.6 | nvidia/gpu display driver | String similarity score indicates a strong match.
+NVIDIA Install Application | nvidia/nvidia geforce now application | High score and presence of 'NVIDIA' in the name suggest a strong match.
+NVIDIA Container | nvidia/container toolkit | 
+NVIDIA AIUser Container | nvidia/container toolkit | Highly similar string match.
+NVIDIA LocalSystem Container | nvidia/container toolkit | High score and matching keywords 'NVIDIA' and 'container'
+NVIDIA Session Container | nvidia/container toolkit | 
+NVIDIA User Container | nvidia/container toolkit | String similarity score of 95.14% indicates a strong match.
+NVIDIA NvDLISR | nvidia/bluefield 1 | 
+NVIDIA Platform Controllers and Framework | nvidia/platform controllers and framework | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+NVIDIA ShadowPlay 11.0.4.0 | nvidia/shadowplay | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+NVIDIA Virtual Audio 4.65.0.3 | nvidia/nvidia virtual gpu manager | 
+Microsoft .NET Host FX Resolver - 6.0.16 (x64) | microsoft/.net 6.0 | 
+Virtual Assistant | loopus/wp virtual assistant | Forced match via fast-path: near-exact product name (similarity=1.00)
+Microsoft .NET Host FX Resolver - 8.0.13 (x64) | microsoft/.net 8.0 | 
+Microsoft Windows Desktop Runtime - 8.0.14 (x64) | microsoft/windows | Highly similar name with version number. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+ASUS Ambient HAL | asus/Ambient HAL | Exact string match with candidate 1. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft .NET Runtime - 6.0.16 (x64) | microsoft/.net | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft .NET Runtime - 8.0.13 (x64) | microsoft/.net 8.0 | 
+Universal CRT Tools x64 | microsoft/universal crt | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+ASUS Aura SDK | asus/aura | String similarity score of 94.05% with 'asus/Aura SDK' makes it the most confident match. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Python 3.13.4 Add to Path (64-bit) | Python/3.13.4 | String similarity score of Python in the original software name. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Windows App Certification Kit Native Components | microsoft/windows app certification kit native components | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Python 3.13.4 Core Interpreter (64-bit) | apache software foundation/apache jackrabbit core | Similarity in 'core' and version string
+ASUS Monitor Control | asus/control center | String similarity score indicates a strong match between the installed software 'ASUS Monitor Control' and the candidate 'asus/control center'
+Windows SDK DirectX x64 Remote | microsoft/windows sdk | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Python 3.13.4 Tcl/Tk Support (64-bit) | python/python | Tcl/Tk Support in Python 3.13.4 matches the 'Python' product in the candidate list. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Epic Games Launcher Prerequisites (x64) | epic games/epic games launcher | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Google Chrome | google/chrome | Perfect token set match | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+IntelliJ IDEA 2024.3.2.1 | jetbrains/intellij idea | Exact matching of the software name. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft Edge | microsoft/microsoft edge | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft Edge WebView2 Runtime | microsoft/microsoft edge | Exact name match | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Rockstar Games Launcher | epic games/launcher | String similarity score indicates a strong match between the installed software name 'Rockstar Games Launcher' and the candidate 'epic games/launcher'.
+RStudio | rstudio/rstudio | Exact string match | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Steam | valve/steam | AI backend (Ollama) unavailable or invalid JSON, using highest string match | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Ubisoft Connect | ubisoft/ubisoft connect | Exact name match. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+GameSDK Service | amd/aim-t manageability service | 
+Universal CRT Redistributable | microsoft/visual c++ redistributable installer | 
+Windows IoT Extension SDK | microsoft/windows iot extension sdk | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005 | microsoft corporation/uniscribe | 
+Windows SDK for Windows Store Apps Libs | microsoft/windows app client for windows desktop | Token set similarity score indicates strong match.
+Windows SDK Desktop Libs arm | microsoft/windows sdk desktop libs | Highly similar name, token set matching score of 76.74% | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Windows SDK Facade Windows WinMD Versioned | microsoft/windows sdk | Best match based on token set similarity score. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Windows SDK DirectX x86 Remote | microsoft/windows sdk | High similarity score and matching token set method indicating a strong match. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+ASUS Framework Service | asus/armoury crate | 
+WebAdvisor by McAfee | mcafee/mcafee webadvisor | 
+Windows SDK Desktop Headers x86 | microsoft/Windows SDK Desktop Headers x86 | The software name contains 'Windows' and 'SDK', which strongly suggests it is related to Microsoft's Windows platform. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Intel? Driver & Support Assistant | intel corporation/intel driver & support assistant | Forced match via fast-path: near-exact product name (similarity=0.97), vendor similarity=1.00
+Launcher Prerequisites (x64) | Nvidia/Launcher | Forced match via fast-path: near-exact product name (similarity=1.00)
+Windows SDK Modern Non-Versioned Developer Tools | microsoft/windows sdk | String similarity score of 63.68% makes this the best match. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Windows SDK Redistributables | microsoft/windows sdk | High score for exact product name match. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft .NET Host FX Resolver - 8.0.14 (x86) | microsoft/.net 8.0 | 
+Windows Software Development Kit - Windows 10.0.19041.685 | osisoft/pi system software | 
+Windows IoT Extension SDK Contracts | microsoft corporation/windows | String similarity with 'Windows' in the software name. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Universal CRT Extension SDK | microsoft/universal crt extension sdk | Best match based on exact string similarity with the installed software name. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Epic Games Launcher | epic games/launcher | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+AURA Service | asus/armoury crate & aura creator installer (rog live service) | 
+Windows Team Extension SDK Contracts | microsoft corporation/windows | String similarity score indicates a good match | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Windows App Certification Kit x64 | microsoft corporation/windows | The candidate matches Windows App Certification Kit x64 due to the presence of 'Windows' in the name. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft Visual Studio Setup Configuration | microsoft/microsoft visual studio | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft .NET Runtime - 8.0.14 (x86) | microsoft/.net 8.0 | 
+Windows Mobile Extension SDK | microsoft/windows 10 mobile | 
+Windows SDK | microsoft/windows sdk | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.21005 | microsoft/visual c++ redistributable installer | 
+Microsoft .NET Runtime - 8.0.13 (x64) | microsoft/.net 8.0 | 
+Intel Driver && Support Assistant | intel corporation/intel driver & support assistant | Forced match via fast-path: near-exact product name (similarity=0.97), vendor similarity=1.00
+Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.44.35208 | microsoft/visual c++ redistributable installer | 
+Windows SDK Desktop Libs arm64 | microsoft/windows sdk desktop libs | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.17 | microsoft/visual c++ redistributable installer | 
+Windows SDK EULA | microsoft/windows sdk | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft ASP.NET Core 8.0.14 - Shared Framework (x86) | microsoft/asp.net core | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Windows SDK Signing Tools | microsoft/windows sdk signing tools | The software name is 'Windows SDK Signing Tools', which matches the expected product name in the candidate list. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft ASP.NET Core 8.0.14 Shared Framework (x86) | microsoft/asp.net core | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Windows SDK Desktop Headers arm64 | microsoft/windows sdk desktop headers | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft .NET Host - 8.0.14 (x86) | microsoft/.net 8.0 | 
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.21005 | microsoft/the installer of visual c++ redistributable | 
+Microsoft .NET Framework 4 Multi-Targeting Pack | microsoft/microsoft .net framework 4.8 | Forced match via fast-path: near-exact product name (similarity=0.96), vendor similarity=1.00
+Windows Desktop Extension SDK | microsoft/windows desktop extension sdk | The original software name contains the word 'Windows Desktop Extension' which is a direct match with one of the candidates. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Windows SDK AddOn | microsoft/windows sdk | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft Visual Studio Setup WMI Provider | microsoft/microsoft visual studio | High score indicates strong match between installed software and candidate. | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.44.35208 | microsoft/visual c++ redistributable installer | 
+Microsoft Visual C++ 2010 x86 Redistributable - 10.0.40219 | microsoft/visual c++ redistributable installer | 
+Microsoft Windows Desktop Runtime - 8.0.14 (x86) | microsoft/windows | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+Bruno 2.10.0 | usebruno/bruno | Forced match via fast-path: near-exact product name (similarity=1.00)
+Claude | anthropics/claude-code | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+CodeBlocks | godaddy/coblocks | 
+MiKTeX | mikexstudios/xcomic | AI backend (Ollama) unavailable or invalid JSON, using highest string match
+MongoDB Compass | mongodb inc/mongodb compass | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+µTorrent | utorrent/web | Best match based on string similarity score.
+Microsoft Visual Studio Code (User) | microsoft/visual studio code | Forced match via fast-path: near-exact product name (similarity=1.00), vendor similarity=1.00
+
+Unmatched
+Product Name
+Windows Driver Package - Altera (WinUSB) JTAG cables (10/13/2018 )
+BatteryBar (remove only)
+R for Windows 4.5.1
+ASUS Aac_NBDT HAL
+AniMeVisionFont_STRIX_SCAR
+Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.44.35208
+Python 3.11.9 pip Bootstrap (64-bit)
+Intel? Software Installer
+Aura Wallpaper Creator
+ASUS Mouse HAL
+Python 3.13.4 Development Libraries (64-bit)
+Intel? Graphics Software
+Python 3.11.9 Documentation (64-bit)
+Python 3.13.4 pip Bootstrap (64-bit)
+Python 3.13.4 Test Suite (64-bit)
+Python 3.11.9 Tcl/Tk Support (64-bit)
+Xbox 360 Controller Emulator
+MongoDB 8.0.13 2008R2Plus SSL (64 bit)
+Paradox Launcher v2
+Microsoft Visual C++ 2022 X64 Additional Runtime - 14.44.35208
+Python 3.13.4 Documentation (64-bit)
+Application Verifier x64 External Package
+Office 16 Click-to-Run Licensing Component
+Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.21005
+oneAPI Level Zero
+VS Script Debugging Common
+Python 3.11.9 Test Suite (64-bit)
+Python 3.11.9 Core Interpreter (64-bit)
+Microsoft Visual C++ 2019 X64 Debug Runtime - 14.29.30157
+NVIDIA MessageBus 3 for NvApp
+NVIDIA Backend
+NVIDIA FrameView SDK 1.5.10920.35420203
+NVIDIA Watchdog Plugin for NvContainer
+NVIDIA Telemetry Client
+ASUS MB Peripheral Products
+Python 3.11.9 Executables (64-bit)
+AURA lighting effect add-on x64
+Documentation Manager
+Python 3.11.9 Add to Path (64-bit)
+Python 3.11.9 Development Libraries (64-bit)
+Java(TM) SE Development Kit 24.0.1 (64-bit)
+Python 3.13.4 Executables (64-bit)
+Visual Studio Build Tools 2019
+HITMAN: World of Assassination
+ModelSim-Altera Starter Edition 13.1.0.162
+Quartus II Web Edition (Free) 13.1.0.162
+Rockstar Games SDK
+Saints Row: The Third Rem.
+Intel(R) Wireless Bluetooth(R)
+Windows SDK Desktop Tools arm64
+vs_minshellmsires
+WinRT Intellisense UAP - en-us
+Windows SDK for Windows Store Apps DirectX x86 Remote
+vs_filehandler_amd64
+WinRT Intellisense PPI - en-us
+Windows SDK Desktop Libs x64
+Windows SDK Desktop Tools x86
+AURA lighting effect add-on
+WinRT Intellisense IoT - Other Languages
+Windows App Certification Kit SupportedApiList x86
+Windows SDK for Windows Store Apps Contracts
+WinAppDeploy
+Windows SDK for Windows Store Apps Metadata
+WinRT Intellisense IoT - en-us
+ROG CustomHotkey
+WinRT Intellisense Mobile - en-us
+Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.44.35208
+Windows SDK for Windows Store Apps Tools
+Windows SDK Desktop Headers arm
+Wondershare Helper Compact 2.6.0
+Microsoft Visual C++ 2022 X86 Additional Runtime - 14.44.35208
+Universal CRT Headers Libraries and Sources
+vs_filehandler_x86
+SDK ARM Redistributables
+Windows Mobile Extension SDK Contracts
+MSI Development Tools
+Windows SDK Desktop Libs x86
+ASUS Smart Display Control
+WinRT Intellisense UAP - Other Languages
+Epic Online Services
+Python Launcher
+Windows SDK for Windows Store Apps Headers
+Windows SDK ARM Desktop Tools
+Windows Desktop Extension SDK Contracts
+Windows SDK for Windows Store Apps
+Universal General MIDI DLS Extension SDK
+ASUS Update Helper
+vs_FileTracker_Singleton
+AI Noise Cancelation Audio Software
+WinRT Intellisense Desktop - Other Languages
+WinRT Intellisense Desktop - en-us
+Universal CRT Tools x86
+vs_minshellmsi
+Microsoft Visual C++ 2019 X86 Debug Runtime - 14.29.30157
+Windows SDK Desktop Headers x64
+Windows Team Extension SDK
+Update for (KB2504637)
+vcpp_crt.redist.clickonce
+Kits Configuration Installer
+Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.21005
+Windows SDK Desktop Tools x64
+Windows SDK Modern Versioned Developer Tools
+SDK ARM Additions
+WinRT Intellisense PPI - Other Languages
+Windows SDK for Windows Store Managed Apps Libs
+Perplexity 1.1.3
+Opera GX Stable 119.0.5497.62
+SageMath version 9.2
+Python 3.11.9 (64-bit)
+Python 3.13.4 (64-bit)
