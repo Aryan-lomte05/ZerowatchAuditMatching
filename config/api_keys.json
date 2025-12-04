@@ -1,0 +1,58 @@
+{
+  "team_members": {
+    "aryan": {
+      "name": "ARYAN",
+      "email": "aryan@example.com",
+      "key_env_var": "GEMINI_KEY_ARYAN",
+      "active": false
+    },
+    "MANAV": {
+      "name": "MANAV",
+      "email": "ayon@example.com",
+      "key_env_var": "GEMINI_KEY_MANAV",
+      "active": true
+    },
+    "DRASHTI": {
+      "name": "DRASHTI1",
+      "email": "",
+      "key_env_var": "GEMINI_KEY_DRASHTI",
+      "active": false
+    },
+    "SHREEYA": {
+      "name": "SHREEYA",
+      "email": "",
+      "key_env_var": "GEMINI_KEY_TEAMMATE2",
+      "active": false
+    },
+    "teammate3": {
+      "name": "DHRUV",
+      "email": "",
+        "key_env_var": "GEMINI_KEY_TEAMMATE3",
+        "active": false      
+  },
+  "DRASHTI2": {
+      "name": "DRASHTI2",
+      "email": "",
+      "key_env_var": "GEMINI_KEY_DRASHTI2",
+      "active": false
+    },
+    "DRASHTI3": {
+      "name": "DRASHTI3",
+      "email": "",
+      "key_env_var": "GEMINI_KEY_DRASHTI3",
+      "active": false
+    },
+    "DRASHTI4": {
+      "name": "DRASHTI4",
+      "email": "",
+      "key_env_var": "GEMINI_KEY_DRASHTI4",
+      "active": false
+    },
+    "DRASHTI5": {
+      "name": "DRASHTI5",
+      "email": "",
+      "key_env_var": "GEMINI_KEY_DRASHTI5",
+      "active": false
+    }
+}
+}
