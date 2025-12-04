@@ -1,10 +1,34 @@
 {
   "team_members": {
-    "aryan": {
+    "ARYAN": {
       "name": "ARYAN",
-      "email": "aryan@example.com",
+      "email": "aryan.lomte@somaiya.edu",
       "key_env_var": "GEMINI_KEY_ARYAN",
-      "active": false
+      "active": true
+    },
+    "ARYAN2": {
+      "name": "ARYAN2",
+      "email": "aryan.lomte@somaiya.edu",
+      "key_env_var": "GEMINI_KEY_ARYAN2",
+      "active": true
+    },
+    "ARYAN3": {
+      "name": "ARYAN3",
+      "email": "aryan.lomte@somaiya.edu",
+      "key_env_var": "GEMINI_KEY_ARYAN3",
+      "active": true
+    },
+    "ARYAN4": {
+      "name": "ARYAN4",
+      "email": "aryan.lomte@somaiya.edu",
+      "key_env_var": "GEMINI_KEY_ARYAN4",
+      "active": true
+    },
+    "ARYAN5": {
+      "name": "ARYAN5",
+      "email": "aryan.lomte@somaiya.edu",
+      "key_env_var": "GEMINI_KEY_ARYAN5",
+      "active": true
     },
     "MANAV": {
       "name": "MANAV",
@@ -16,7 +40,7 @@
       "name": "DRASHTI1",
       "email": "",
       "key_env_var": "GEMINI_KEY_DRASHTI",
-      "active": false
+      "active": true
     },
     "SHREEYA": {
       "name": "SHREEYA",
@@ -28,31 +52,31 @@
       "name": "DHRUV",
       "email": "",
         "key_env_var": "GEMINI_KEY_TEAMMATE3",
-        "active": false      
+        "active": true      
   },
   "DRASHTI2": {
       "name": "DRASHTI2",
       "email": "",
       "key_env_var": "GEMINI_KEY_DRASHTI2",
-      "active": false
+      "active": true
     },
     "DRASHTI3": {
       "name": "DRASHTI3",
       "email": "",
       "key_env_var": "GEMINI_KEY_DRASHTI3",
-      "active": false
+      "active": true
     },
     "DRASHTI4": {
       "name": "DRASHTI4",
       "email": "",
       "key_env_var": "GEMINI_KEY_DRASHTI4",
-      "active": false
+      "active": true
     },
     "DRASHTI5": {
       "name": "DRASHTI5",
       "email": "",
       "key_env_var": "GEMINI_KEY_DRASHTI5",
-      "active": false
+      "active": true
     }
 }
 }
