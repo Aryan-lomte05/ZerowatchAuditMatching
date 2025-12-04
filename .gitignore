@@ -8,9 +8,7 @@
 config/api_keys_private.json
 
 # Data
-data/*.csv
-input/audit_pdfs/*.pdf
-input/audit_jsons/*.json
+
 
 # Output
 output/**/*.json
