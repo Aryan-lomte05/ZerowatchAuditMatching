@@ -280,55 +280,172 @@ def get_all_candidates(
 # ============================================================================
 
 class GeminiVerifier:
-    """Transparent Gemini verification with round-robin API key usage"""
+    """Transparent Gemini verification with:
+    - persistent caching
+    - round-robin API key usage
+    - automatic disabling of exhausted keys
+    - per-run call limits
+    """
 
     def __init__(self, api_keys: Dict[str, str]):
         self.api_keys = api_keys
         self.member_names: List[str] = list(api_keys.keys())
         self.current_idx: int = 0
+
         self.usage_stats: Dict[str, int] = {name: 0 for name in self.member_names}
+        self.exhausted: Dict[str, bool] = {name: False for name in self.member_names}
+        self.total_calls: int = 0
+
+        # ---- Cache setup ----
+        self.cache_path = Config.GEMINI_CACHE_PATH
+        self.cache: Dict[str, Dict] = {}
+        self._load_cache()
 
         if self.member_names:
             print(f"✅ Initialized Gemini with {len(self.member_names)} API keys\n")
         else:
             print("⚠️  GeminiVerifier initialized with 0 API keys\n")
 
+    # -------------------------
+    # CACHE HANDLING
+    # -------------------------
+
+    def _load_cache(self):
+        """Load cached Gemini decisions from disk (jsonl)."""
+        if not self.cache_path.exists():
+            return
+
+        try:
+            with open(self.cache_path, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    entry = json.loads(line)
+                    key = entry["key"]
+                    result = entry["result"]
+                    self.cache[key] = result
+            print(f"📦 Gemini cache loaded: {len(self.cache)} entries")
+        except Exception as e:
+            print(f"⚠️  Failed to load Gemini cache: {e}")
+
+    def _make_cache_key(self, original_name: str, candidates: List[Dict]) -> str:
+        """
+        Build a stable cache key based on:
+        - normalized original software name
+        - top candidate canonicals (order matters)
+        """
+        norm_name = str(original_name).strip().lower()
+        top_canonicals = [c["canonical"] for c in candidates[:10]]
+
+        payload = {
+            "original_name": norm_name,
+            "top_candidates": top_canonicals,
+        }
+        raw = json.dumps(payload, sort_keys=True)
+        return hashlib.sha256(raw.encode("utf-8")).hexdigest()
+
+    def _get_from_cache(self, cache_key: str) -> Optional[Dict]:
+        result = self.cache.get(cache_key)
+        if result is None:
+            return None
+        # Return a copy so we can safely mutate per-run metadata
+        return json.loads(json.dumps(result))
+
+    def _save_to_cache(self, cache_key: str, core_result: Dict):
+        """Append a new entry to the cache file & in-memory dict."""
+        self.cache[cache_key] = core_result
+        try:
+            self.cache_path.parent.mkdir(parents=True, exist_ok=True)
+            with open(self.cache_path, "a", encoding="utf-8") as f:
+                f.write(json.dumps({"key": cache_key, "result": core_result}) + "\n")
+        except Exception as e:
+            print(f"⚠️  Failed to write Gemini cache entry: {e}")
+
+    # -------------------------
+    # KEY MANAGEMENT
+    # -------------------------
+
+    def has_available_keys(self) -> bool:
+        """Return True if at least one key is not exhausted and global limit not hit."""
+        if self.total_calls >= Config.MAX_GEMINI_CALLS:
+            return False
+        return any(
+            not self.exhausted[name]
+            and self.usage_stats.get(name, 0) < Config.MAX_CALLS_PER_KEY
+            for name in self.member_names
+        )
+
     def _get_next_member(self) -> Tuple[Optional[str], Optional[str]]:
-        """Round-robin through team members' API keys."""
+        """Round-robin through non-exhausted team members' API keys."""
         if not self.member_names:
             return None, None
 
-        member_name = self.member_names[self.current_idx]
-        api_key = self.api_keys[member_name]
+        attempts = 0
+        n = len(self.member_names)
 
-        self.usage_stats[member_name] += 1
-        self.current_idx = (self.current_idx + 1) % len(self.member_names)
+        while attempts < n:
+            member_name = self.member_names[self.current_idx]
+            self.current_idx = (self.current_idx + 1) % n
 
-        return member_name, api_key
+            if self.exhausted.get(member_name, False):
+                attempts += 1
+                continue
+
+            if self.usage_stats[member_name] >= Config.MAX_CALLS_PER_KEY:
+                self.exhausted[member_name] = True
+                attempts += 1
+                continue
+
+            api_key = self.api_keys[member_name]
+            self.usage_stats[member_name] += 1
+            self.total_calls += 1
+            return member_name, api_key
+
+            attempts += 1
+
+        return None, None
+
+    # -------------------------
+    # UTILITIES
+    # -------------------------
 
     def _strip_code_fences(self, text: str) -> str:
         """Strip ```json ... ``` or ``` ... ``` fences from LLM output safely."""
-        if '```' not in text:
+        if "```" not in text:
             return text.strip()
 
-        # Typical pattern: ```json\n{...}\n```
-        parts = text.split('```')
-        # parts: ['', 'json\n{...}\n', ''] or similar
+        parts = text.split("```")
         for segment in parts:
             segment = segment.strip()
-            if segment.startswith('{') and segment.endswith('}'):
+            if segment.startswith("{") and segment.endswith("}"):
                 return segment
-            if '{' in segment and '}' in segment:
-                inside = segment[segment.find('{'): segment.rfind('}') + 1]
-                if inside.strip().startswith('{'):
+            if "{" in segment and "}" in segment:
+                inside = segment[segment.find("{"): segment.rfind("}") + 1]
+                if inside.strip().startswith("{"):
                     return inside.strip()
 
         return text.strip()
 
-    def verify_match(self, original_name: str, candidates: List[Dict]) -> Dict:
-        """Ask Gemini to select best match from candidates."""
+    # -------------------------
+    # MAIN CALL
+    # -------------------------
 
-        # Build candidates list text
+    def verify_match(self, original_name: str, candidates: List[Dict]) -> Dict:
+        """Ask Gemini to select best match from candidates, with cache + limits."""
+
+        # ----- CACHE CHECK -----
+        cache_key = self._make_cache_key(original_name, candidates)
+        cached = self._get_from_cache(cache_key)
+        if cached is not None:
+            # enrich cached result with run-specific metadata
+            cached["from_cache"] = True
+            cached.setdefault("total_candidates_provided", len(candidates))
+            cached.setdefault("gemini_api_key_owner", cached.get("gemini_api_key_owner", "cache"))
+            cached.setdefault("gemini_response_time_ms", 0)
+            return cached
+
+        # ----- PROMPT -----
         candidates_lines = []
         for i, candidate in enumerate(candidates[:20], 1):
             cand_line = (
@@ -376,14 +493,51 @@ JSON response:"""
             candidates=candidates_text
         )
 
+        # If overall or per-key limits are hit, don't call Gemini, use fallback
+        if not self.has_available_keys():
+            best = candidates[0]
+            core = {
+                "matched": True,
+                "selected_canonical": best["canonical"],
+                "vendor": best["vendor"],
+                "product": best["product"],
+                "confidence": best["score"],
+                "reasoning": "Gemini call limit reached for this run, using highest string match",
+            }
+            core["gemini_api_key_owner"] = "fallback_limit"
+            core["gemini_response_time_ms"] = 0
+            core["total_candidates_provided"] = len(candidates)
+            core["fallback_used"] = True
+
+            # still save in cache so repeated items in this run don't recompute
+            self._save_to_cache(cache_key, core)
+            return core
+
+        member_name = None
+
         try:
             member_name, api_key = self._get_next_member()
             if not api_key:
-                raise RuntimeError("No Gemini API keys available")
+                # no active keys available
+                best = candidates[0]
+                core = {
+                    "matched": True,
+                    "selected_canonical": best["canonical"],
+                    "vendor": best["vendor"],
+                    "product": best["product"],
+                    "confidence": best["score"],
+                    "reasoning": "No available Gemini keys, using highest string match",
+                }
+                core["gemini_api_key_owner"] = "fallback_no_keys"
+                core["gemini_response_time_ms"] = 0
+                core["total_candidates_provided"] = len(candidates)
+                core["fallback_used"] = True
+                self._save_to_cache(cache_key, core)
+                return core
 
-            # Configure API key for this specific request
+            import google.generativeai as genai
             genai.configure(api_key=api_key)
-            model = genai.GenerativeModel('gemini-2.0-flash-exp')
+            model = genai.GenerativeModel("gemini-2.0-flash-exp")
 
             start_time = time.time()
             response = model.generate_content(
@@ -398,42 +552,51 @@ JSON response:"""
             text = (response.text or "").strip()
             text = self._strip_code_fences(text)
 
-            # Try to parse JSON
             parsed = json.loads(text)
 
-            # Add transparency metadata
-            parsed['gemini_api_key_owner'] = member_name
-            parsed['gemini_response_time_ms'] = round(gemini_time * 1000, 2)
-            parsed['gemini_raw_response'] = text[:500]
-            parsed['total_candidates_provided'] = len(candidates)
+            # enrich core result
+            core = dict(parsed)  # shallow copy
+            core["gemini_api_key_owner"] = member_name
+            core["gemini_response_time_ms"] = round(gemini_time * 1000, 2)
+            core["gemini_raw_response"] = text[:500]
+            core["total_candidates_provided"] = len(candidates)
 
-            if parsed.get('matched'):
-                canonical = parsed.get('selected_canonical', '')
-                if '/' in canonical:
-                    vendor, product = canonical.split('/', 1)
-                    parsed['vendor'] = vendor
-                    parsed['product'] = product
+            if core.get("matched"):
+                canonical = core.get("selected_canonical", "")
+                if "/" in canonical:
+                    vendor, product = canonical.split("/", 1)
+                    core["vendor"] = vendor
+                    core["product"] = product
 
-            return parsed
+            # Save to cache (this is the heavy call you don't want to repeat)
+            self._save_to_cache(cache_key, core)
+            return core
 
         except Exception as e:
-            print(f"⚠️  Gemini verification failed: {str(e)[:150]}")
+            msg = str(e)
+            print(f"⚠️  Gemini verification failed: {msg[:150]}")
 
-            # Fallback: use highest string match
+            # If quota exceeded for this key, mark it exhausted so we stop using it
+            if member_name and ("429" in msg or "quota" in msg.lower()):
+                self.exhausted[member_name] = True
+
             best = candidates[0]
-
-            return {
-                'matched': True,
-                'selected_canonical': best['canonical'],
-                'vendor': best['vendor'],
-                'product': best['product'],
-                'confidence': best['score'],
-                'reasoning': 'Gemini unavailable or parsing failed, using highest string match',
-                'gemini_api_key_owner': 'fallback',
-                'gemini_response_time_ms': 0,
-                'total_candidates_provided': len(candidates),
-                'fallback_used': True,
+            core = {
+                "matched": True,
+                "selected_canonical": best["canonical"],
+                "vendor": best["vendor"],
+                "product": best["product"],
+                "confidence": best["score"],
+                "reasoning": "Gemini unavailable or quota exceeded, using highest string match",
             }
+            core["gemini_api_key_owner"] = member_name or "fallback_error"
+            core["gemini_response_time_ms"] = 0
+            core["total_candidates_provided"] = len(candidates)
+            core["fallback_used"] = True
+
+            # cache this fallback too
+            self._save_to_cache(cache_key, core)
+            return core
 
     def print_usage_stats(self):
         """Print API key usage statistics"""
@@ -443,10 +606,11 @@ JSON response:"""
         print("=" * 80 + "\n")
 
         for member, count in self.usage_stats.items():
-            print(f"  {member:20s}: {count:4d} requests")
+            exhausted = " (exhausted)" if self.exhausted.get(member) else ""
+            print(f"  {member:20s}: {count:4d} requests{exhausted}")
 
-        total = sum(self.usage_stats.values())
-        print(f"\n  Total: {total} requests")
+        print(f"\n  Total calls this run: {self.total_calls}")
+
 
 
 # ============================================================================
